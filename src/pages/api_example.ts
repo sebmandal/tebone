@@ -20,14 +20,17 @@ const API_Example: PageType = {
 	method: "GET",
 	handler: (req, res) => {
 		const employees = API_Info.employees;
-		const employee = employees[parseInt(req.query.id)];
+		const employee = employees[parseInt(req.query.id)] || {
+			message: "This user does not exist.",
+		};
+		const query: boolean = req.query.id !== undefined;
 
 		res.header("Content-Type", "application/json");
 
-		if (employee) {
-			return res.send(JSON.stringify(employee, null, 2));
-		} else {
+		if (!query) {
 			return res.send(JSON.stringify(employees, null, 2));
+		} else {
+			return res.send(JSON.stringify(employee, null, 2));
 		}
 	},
 };
