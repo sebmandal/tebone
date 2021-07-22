@@ -6,8 +6,9 @@ To run this locally, simply clone it from the GitHub, install the packages using
 
 To experience the examples included in this template, try the following URLs
 
-| Index Page          | localhost:3000/                   |
+| What is this page?  | The URL to the page               |
 | ------------------- | --------------------------------- |
+| Index Page          | localhost:3000/                   |
 | About Page          | localhost:3000/about              |
 | Full Employees API  | localhost:3000/api/employees      |
 | Employee of index 0 | localhost:3000/api/employees?id=0 |
