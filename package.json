@@ -1,0 +1,29 @@
+{
+  "name": "typescript-website",
+  "version": "1.0.0",
+  "description": "Developer friendly Typescript template",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts && node .",
+    "compile": "ts",
+    "start:nocompile": "node ."
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "node",
+    "nodejs"
+  ],
+  "author": "Sebastian Mandal",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/pug": "^2.0.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "pug": "^3.0.2"
+  }
+}
