@@ -1,4 +1,4 @@
-import { PageType } from "../core/types";
+import { PageType } from "../../core/types";
 
 const IndexInfo = {
 	title: "Home",
@@ -6,7 +6,7 @@ const IndexInfo = {
 
 const IndexPage: PageType = {
 	path: "/",
-	method: "GET",
+	method: "get",
 	handler: (req, res) => {
 		res.render("index", IndexInfo);
 	},

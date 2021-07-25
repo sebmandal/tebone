@@ -1,5 +1,5 @@
 export interface PageType {
 	path: string;
-	method: "GET" | "POST" | "PUT" | "DELETE";
+	method: "get" | "post" | "put" | "delete";
 	handler: (req: any, res: any) => void;
 }

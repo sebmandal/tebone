@@ -1,4 +1,4 @@
-import { PageType } from "../core/types";
+import { PageType } from "../../core/types";
 
 const API_Info = {
 	employees: [
@@ -17,7 +17,7 @@ const API_Info = {
 
 const API_Example: PageType = {
 	path: "/api/employees",
-	method: "GET",
+	method: "get",
 	handler: (req, res) => {
 		const employees = API_Info.employees;
 		const employee = employees[parseInt(req.query.id)] || {

@@ -1,4 +1,4 @@
-import { PageType } from "../core/types";
+import { PageType } from "../../core/types";
 
 const AboutInfo = {
 	title: "About us",
@@ -6,7 +6,7 @@ const AboutInfo = {
 
 const AboutPage: PageType = {
 	path: "/about",
-	method: "GET",
+	method: "get",
 	handler: (req, res) => {
 		res.render("about", AboutInfo);
 	},
