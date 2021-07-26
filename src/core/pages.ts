@@ -1,10 +1,12 @@
 // importing all the pages and APIs
-import index from "../examples/pages/home";
-import about from "../examples/pages/about";
-import employeeAPI from "../examples/api/employees";
+import exampleIndex from "../examples/pages/home";
+import exampleAbout from "../examples/pages/about";
+import exampleContact from "../examples/pages/contact";
+import exampleEmployeeAPI from "../examples/api/employees";
 
 export default {
-	index,
-	about,
-	employeeAPI,
+	exampleIndex,
+	exampleAbout,
+	exampleContact,
+	exampleEmployeeAPI,
 };
