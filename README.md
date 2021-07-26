@@ -27,9 +27,11 @@ npm start
 
 👨🏻‍💻 To add your own pages to your application follow these 3 steps, then run/restart the application:
 
-- 1. Create a directory where you will store your TS pages.
-- 2. Add a (yourFileName).ts in said directory, (see examples and follow) and have it export default an object of type PageType.
-- 3. Create a .pug file with whatever it shall display, and link it in the res.render() in your Typescript file.
+| Step | Description                                                                                                                 |
+| ---- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1.   | Create a directory where you will store your TS pages.                                                                      |
+| 2.   | Add a (yourFileName).ts in said directory, (see examples and follow) and have it export default an object of type PageType. |
+| 3.   | Create a .pug file with whatever it shall display, and link it in the res.render() in your Typescript file.                 |
 
 📥 To experience the examples included in this template, try the following URLs
 
