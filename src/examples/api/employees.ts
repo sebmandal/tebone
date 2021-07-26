@@ -1,6 +1,6 @@
 import { PageType } from "../../core/types";
 
-const API_Info = {
+const employeeObject = {
 	employees: [
 		{
 			name: "John Smith",
@@ -15,24 +15,20 @@ const API_Info = {
 	],
 };
 
-const API_Example: PageType = {
+const employeeAPI: PageType = {
 	path: "/api/employees",
 	method: "get",
 	handler: (req, res) => {
-		const employees = API_Info.employees;
+		const query: boolean = req.query.id;
+		const employees = employeeObject.employees;
 		const employee = employees[parseInt(req.query.id)] || {
 			message: "This user does not exist.",
 		};
-		const query: boolean = req.query.id !== undefined;
 
 		res.header("Content-Type", "application/json");
 
-		if (!query) {
-			return res.send(JSON.stringify(employees, null, 2));
-		} else {
-			return res.send(JSON.stringify(employee, null, 2));
-		}
+		return res.send(JSON.stringify(query ? employee : employees, null, 2));
 	},
 };
 
-export default API_Example;
+export default employeeAPI;

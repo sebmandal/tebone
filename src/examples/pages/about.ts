@@ -1,15 +1,15 @@
 import { PageType } from "../../core/types";
 
-const AboutInfo = {
+const aboutObject = {
 	title: "About us",
 };
 
-const AboutPage: PageType = {
+const aboutPage: PageType = {
 	path: "/about",
 	method: "get",
 	handler: (req, res) => {
-		res.render("about", AboutInfo);
+		res.render("examples/about", aboutObject);
 	},
 };
 
-export default AboutPage;
+export default aboutPage;

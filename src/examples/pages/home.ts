@@ -1,15 +1,15 @@
 import { PageType } from "../../core/types";
 
-const IndexInfo = {
+const indexObject = {
 	title: "Home",
 };
 
-const IndexPage: PageType = {
+const indexPage: PageType = {
 	path: "/",
 	method: "get",
 	handler: (req, res) => {
-		res.render("index", IndexInfo);
+		res.render("examples/index", indexObject);
 	},
 };
 
-export default IndexPage;
+export default indexPage;

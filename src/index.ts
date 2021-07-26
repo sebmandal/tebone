@@ -13,7 +13,7 @@ app.set("view engine", "pug");
 app.use(express.static("../public"));
 
 // Automatically configure page routes
-import * as pages from "./core/pages";
+import pages from "./core/pages";
 Object.entries(pages).forEach(([, { method, path, handler }]) => {
 	return app[method](path, handler);
 });

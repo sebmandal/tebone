@@ -1,13 +1,10 @@
-import { PageType } from "./types";
-
-// Index
+// importing all the pages and APIs
 import index from "../examples/pages/home";
-export const IndexPage: PageType = index;
-
-// About
 import about from "../examples/pages/about";
-export const AboutPage: PageType = about;
+import employeeAPI from "../examples/api/employees";
 
-// API example
-import api_example from "../examples/api/api_example";
-export const API_Example: PageType = api_example;
+export default {
+	index,
+	about,
+	employeeAPI,
+};
