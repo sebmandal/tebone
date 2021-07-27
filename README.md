@@ -1,8 +1,9 @@
 # TypeScript Express Backend 1 (TEB1)
 
 - [Introduction](#introduction)
-- [What's included in the examples?](#example-features)
-- [For developers](#developers-❤)
+- [Features](#features)
+- [Examples](#example-pages)
+- [For developers](#developers)
 
 ### Introduction
 
@@ -12,7 +13,12 @@
 
 ###### 👆🏼 If it doesn't exist, no changes are being made at the moment.
 
-### Example features
+### Features
+
+- tebone makes it extremely easy to add Express routes, whether that be a page or an API, etc.
+- tebone comes with example pages/an example API, so it's easy to see how you go about adding features yourselves.
+
+### Example pages
 
 📥 To experience the examples included in this template, try the following URLs (they're all linked on the index page)
 
@@ -25,7 +31,7 @@
 | Employee of index 0 | localhost:3000/api/employees?id=0 |
 | Employee of index 1 | localhost:3000/api/employees?id=1 |
 
-### Developers ❤
+### Developers
 
 📑 How to clone and run this on your own machine (index page links all example URLs):
 
