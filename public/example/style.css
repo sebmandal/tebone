@@ -1,0 +1,32 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+	position: relative;
+	left: 30%;
+	width: 40%;
+}
+
+.container > a > code > span:hover {
+	color: red;
+}
+
+.container > a > code :nth-child(1) {
+	float: left;
+}
+
+.container > a > code :nth-child(2) {
+	float: right;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+}
