@@ -1,8 +1,8 @@
 # TypeScript Express Backend 1 (TEB1)
 
 - [Introduction](#introduction)
-- [Run locally](#how-can-i-run-this)
-- [What's included in the examples?](#what-is-included-in-the-example)
+- [What's included in the examples?](#example-features)
+- [For developers](#developers-❤)
 
 ### Introduction
 
@@ -12,11 +12,22 @@
 
 ###### 👆🏼 If it doesn't exist, no changes are being made at the moment.
 
-### How can I run this?
+### Example features
 
-🖥 To run this locally, simply clone it from the GitHub, install the packages using NPM by doing `npm install` in the terminal to install all the necessary packages/modules. To start the application, run `npm start`.
+📥 To experience the examples included in this template, try the following URLs (they're all linked on the index page)
 
-📑 In-depth steps:
+| What is this page?  | The URL to the page               |
+| ------------------- | --------------------------------- |
+| Index Page          | localhost:3000/                   |
+| About Page          | localhost:3000/about              |
+| Contact Page        | localhost:3000/contact            |
+| Full Employees API  | localhost:3000/api/employees      |
+| Employee of index 0 | localhost:3000/api/employees?id=0 |
+| Employee of index 1 | localhost:3000/api/employees?id=1 |
+
+### Developers ❤
+
+📑 How to clone and run this on your own machine (index page links all example URLs):
 
 ```bash
 git clone https://github.com/sebmandal/tebone.git
@@ -25,28 +36,12 @@ npm install
 npm start
 ```
 
-👨🏻‍💻 To add your own pages to your application follow these 3 steps, then run/restart the application:
+👨🏻‍💻 To add your own pages to your application follow these 3 steps, then run/restart the application: (try to replicate how the examples work)
 
 ###### If I see it fit, I can make a simple tutorial video about creating a page. May come soon!
 
-| Step | Description                                                                                                                 |
-| ---- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1.   | Create a directory inside the src/ folder, where you will store your TS pages.                                              |
-| 2.   | Add a (yourFileName).ts in said directory, (see examples and follow) and have it export default an object of type PageType. |
-| 3.   | Create a .pug file with whatever it shall display, and link it in the res.render() in your Typescript file.                 |
-
-📥 To experience the examples included in this template, try the following URLs
-
-### What is included in the examples?
-
-| What is this page?  | The URL to the page               |
-| ------------------- | --------------------------------- |
-| Index Page          | localhost:3000/                   |
-| About Page          | localhost:3000/about              |
-| Full Employees API  | localhost:3000/api/employees      |
-| Employee of index 0 | localhost:3000/api/employees?id=0 |
-| Employee of index 1 | localhost:3000/api/employees?id=1 |
-
-###### If you're running this on a different port, change localhost:3000 to localhost:yourNewPort
-
-###### That goes for domains too, replace localhost with your custom domain if you're using one
+| Creating a page | Description                                                                                                                 |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1.              | Create a directory inside the src/ folder, where you will store your TS pages.                                              |
+| 2.              | Add a (yourFileName).ts in said directory, (see examples and follow) and have it export default an object of type PageType. |
+| 3.              | Create a .pug file in the views/ directory, and link it in the res.render() in your Typescript file.                        |
