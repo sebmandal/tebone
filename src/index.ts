@@ -10,7 +10,7 @@ import path from "path";
 const app = express();
 app.set("views", path.join(__dirname, "../views"));
 app.set("view engine", "pug");
-app.use(express.static("../public"));
+app.use(express.static("./public"));
 
 // Automatically configure page routes
 import pages from "./core/pages";
