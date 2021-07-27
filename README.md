@@ -37,7 +37,7 @@ npm start
 
 📥 To experience the examples included in this template, try the following URLs
 
-### What is included in the example?
+### What is included in the examples?
 
 | What is this page?  | The URL to the page               |
 | ------------------- | --------------------------------- |
