@@ -6,7 +6,7 @@
 
 ### Introduction
 
-🦚 This project was designed with developers in mind. Adding pages to the application is easier than ever.
+🦚 This project was designed with developers in mind. Managing an Express application is easier than ever!
 
 📲 To see the latest features and commits on this repo, check out the [working-branch](https://github.com/sebmandal/tebone/tree/working-branch) branch.
 
