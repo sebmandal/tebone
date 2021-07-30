@@ -50,4 +50,4 @@ npm start
 | --------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | 1.              | Create a directory inside the src/ folder, where you will store your TS pages.                                              |
 | 2.              | Add a (yourFileName).ts in said directory, (see examples and follow) and have it export default an object of type PageType. |
-| 3.              | Create a .pug file in the views/ directory, and link it in the res.render() in your Typescript file.                        |
+| 3.              | Create an ejs file in the views/ directory, and link it in the res.render() in your Typescript file.                        |
