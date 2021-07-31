@@ -12,10 +12,10 @@ app.set("views", path.join(__dirname, "../views"));
 app.set("view engine", "ejs");
 app.use(express.static("./public"));
 
-// Automatically configure page routes
-import pages from "./core/pages";
-Object.entries(pages).forEach(([, { method, path, handler }]) => {
-	return app[method](path, handler);
+// Automatically configure Express routes
+import routes from "./core/all_routes";
+Object.entries(routes).forEach(([_, Route]) => {
+	new Route().run(app);
 });
 
 // Start the Express server

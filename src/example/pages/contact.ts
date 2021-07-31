@@ -1,15 +1,22 @@
-import { PageType } from "../../core/types";
+import Route from "../../core/route";
+import Express from "express";
 
-const contactObject = {
-	title: "Get in touch",
+const renderObject = {
+	title: "Get in touch!",
 };
 
-const contactPage: PageType = {
-	path: "/contact",
-	method: "get",
-	handler: (req, res) => {
-		res.render("examples/contact", contactObject);
-	},
+const script = (req: Express.Request, res: Express.Response) => {
+	return res.render("example/contact", renderObject);
 };
 
-export default contactPage;
+export default class Contact extends Route {
+	/**
+	 * super()
+	 * parameter 1: the URL path (/api/employees)
+	 * parameter 2: the Express routing method (GET)
+	 * parameter 3: the Express middleware/handler function (script)
+	 **/
+	constructor() {
+		super("/contact", "get", script);
+	}
+}

@@ -1,15 +1,22 @@
-import { PageType } from "../../core/types";
+import Route from "../../core/route";
+import Express from "express";
 
-const aboutObject = {
-	title: "About us",
+const renderObject = {
+	title: "About us.",
 };
 
-const aboutPage: PageType = {
-	path: "/about",
-	method: "get",
-	handler: (req, res) => {
-		res.render("examples/about", aboutObject);
-	},
+const script = (req: Express.Request, res: Express.Response) => {
+	return res.render("example/about", renderObject);
 };
 
-export default aboutPage;
+export default class AboutUs extends Route {
+	/**
+	 * super()
+	 * parameter 1: the URL path (/api/employees)
+	 * parameter 2: the Express routing method (GET)
+	 * parameter 3: the Express middleware/handler function (script)
+	 **/
+	constructor() {
+		super("/about", "get", script);
+	}
+}
