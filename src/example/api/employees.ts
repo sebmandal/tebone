@@ -22,7 +22,7 @@ const employeeDatabase = {
 const script = (req: Express.Request, res: Express.Response) => {
 	/**
 	 * checking if a query was provided,
-	 * and creating a query variable of type <any> to avoid the annoying Typescript "id does not exist on type of req.query"
+	 * and creating a query variable of type <any> to avoid the annoying TypeScript "id does not exist on type of req.query"
 	 **/
 	const queryExists: boolean = req.query.id !== undefined;
 	const query: any = req.query;
