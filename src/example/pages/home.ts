@@ -13,7 +13,7 @@ const script = (req: Express.Request, res: Express.Response) => {
 export default class Home extends Route {
 	/**
 	 * super()
-	 * parameter 1: the URL path (/api/employees)
+	 * parameter 1: the URL path (/)
 	 * parameter 2: the Express routing method (GET)
 	 * parameter 3: the Express middleware/handler function (script)
 	 **/
