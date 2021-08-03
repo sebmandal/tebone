@@ -1,10 +1,8 @@
 <div align="center">
   <a href="https://github.com/sebmandal/tebone" target="_blank">
-    <img height="180" alt="tebone" src="https://cdn.discordapp.com/attachments/869843923428847666/872057443566383144/tebone.svg">
+    <img height="180" alt="tebone" src="https://cdn.discordapp.com/attachments/869843923428847666/872057445151805440/tebone_transparent_white.svg">
   </a>
 </div>
-
-# tebone 
 
 ### Table of contents
 
