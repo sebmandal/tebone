@@ -9,7 +9,7 @@ import path from "path";
 // Set up Express app (views, static files, etc.)
 const app = express();
 app.set("views", path.join(__dirname, "../views"));
-app.set("view engine", "ejs");
+app.set("view engine", "ejs"); // change ejs to whatever you want
 app.use(express.static("./public"));
 
 // Automatically configure Express routes
