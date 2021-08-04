@@ -18,5 +18,8 @@ Object.entries(routes).forEach(([_, Route]) => {
 	new Route().run(app);
 });
 
+// if you want custom error handling or other customizations, do it here
+// app.use(yourMiddlewareFunction);
+
 // Start the Express server
 app.listen(process.env.PORT || 3000);
