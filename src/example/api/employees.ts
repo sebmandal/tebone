@@ -22,14 +22,14 @@ const employeeDatabase = {
 const script = (req: Express.Request, res: Express.Response) => {
 	/**
 	 * checking if a query was provided,
-	 * and creating a query variable of type <any> to avoid the annoying TypeScript "id does not exist on type of req.query"
-	 **/
+	 * and creating a query variable of type <any> to avoid the annoying Typescript "id does not exist on type of req.query"
+	 */
 	const queryExists: boolean = req.query.id !== undefined;
 	const query: any = req.query;
 
 	/**
 	 * checking if a user exists at the index (query.id) provided in the employee array
-	 **/
+	 */
 	const employees = employeeDatabase.employees;
 	const employee = employees[parseInt(query["id"])] || {
 		message: "This user does not exist.",
@@ -41,11 +41,12 @@ const script = (req: Express.Request, res: Express.Response) => {
 
 export default class API extends Route {
 	/**
-	 * super()
-	 * parameter 1: the URL path (/api/employees)
-	 * parameter 2: the Express routing method (GET)
-	 * parameter 3: the Express middleware/handler function (script)
-	 **/
+	 * Configuring the necessary properties for the class to be executable
+	 *
+	 * @param path - The routing path
+	 * @param method - The routing method
+	 * @param script - The route handler script
+	 */
 	constructor() {
 		super("/api/employees", "get", script);
 	}

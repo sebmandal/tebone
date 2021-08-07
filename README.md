@@ -48,6 +48,8 @@ npm install
 npm start
 ```
 
+If you want to use EJS for your views, execute this command: `npm i ejs` otherwise, do `npm install (your_preferred_view_engine)` and change EJS to you preferred view engine in index.ts (line 15:25)
+
 👨🏻‍💻 To add your own pages to your application follow these 3 steps, then run/restart the application: (try to replicate how the examples work)
 
 ###### If I see it fit, I can make a simple tutorial video about creating a page. May come soon!
