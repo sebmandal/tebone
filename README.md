@@ -6,10 +6,10 @@
 
 ### Table of contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Examples](#example-pages)
-- [For developers](#developers)
+-   [Introduction](#introduction)
+-   [Features](#features)
+-   [Examples](#example-pages)
+-   [For developers](#developers)
 
 ### Introduction
 
@@ -21,8 +21,8 @@
 
 ### Features
 
-- tebone makes it extremely easy to add Express routes, whether that be a page or an API, etc.
-- tebone comes with example pages/an example API, so it's easy to see how you go about adding features yourselves.
+-   tebone makes it extremely easy to add Express routes, whether that be a page or an API, etc.
+-   tebone comes with example pages/an example API, so it's easy to see how you go about adding features yourselves.
 
 ### Example pages
 
@@ -45,17 +45,17 @@
 git clone https://github.com/sebmandal/tebone.git
 cd tebone
 npm install
+*optional: npm i pug
 npm start
 ```
 
-If you want to use EJS for your views, execute this command: `npm i ejs` otherwise, do `npm install (your_preferred_view_engine)` and change EJS to you preferred view engine in index.ts (line 15:25)
+If you want to use EJS for your views, execute this command: `npm i pug` otherwise, do `npm install (your_preferred_view_engine)` and change Pug to you preferred view engine in index.ts (line 15:25)
 
-👨🏻‍💻 To add your own pages to your application follow these 3 steps, then run/restart the application: (try to replicate how the examples work)
+👨🏻‍💻 To add your own pages to your application follow these 2 steps, then run/restart the application: (try to replicate how the examples work)
 
 ###### If I see it fit, I can make a simple tutorial video about creating a page. May come soon!
 
-| Creating a page | Description                                                                                                                 |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1.              | Create a directory inside the src/ folder, where you will store your TS pages.                                              |
-| 2.              | Add a (yourFileName).ts in said directory, (see examples and follow) and have it export default an object of type PageType. |
-| 3.              | Create an ejs file in the views/ directory, and link it in the res.render() in your TypeScript file.                        |
+| Creating a page | Description                                                                                                                        |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 1.              | Add a (yourFileName).ts in the routes/ directory, (see examples and follow) and have it export default an object of type PageType. |
+| 2.              | Create a .pug file in the views/ directory, and link it in the res.render() in your TypeScript file.                               |

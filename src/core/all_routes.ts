@@ -1,12 +1,10 @@
-// importing all the pages and APIs
-import Home from "../example/pages/home";
-import About from "../example/pages/about";
-import Contact from "../example/pages/contact";
-import API from "../example/api/employees";
+// imports
+import * as fs from "fs";
 
-export default {
-	Home,
-	About,
-	Contact,
-	API,
-};
+// setting the routes as a variable
+const routes = fs.readdirSync("./dist/routes").map((file) => {
+	const route = file.replace(".js", "");
+	return require(`../routes/${route}`).default;
+});
+
+export default routes;

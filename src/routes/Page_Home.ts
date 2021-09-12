@@ -1,4 +1,4 @@
-import Route from "../../core/route";
+import Route from "../core/route";
 import Express from "express";
 
 const renderObject = {
@@ -7,7 +7,7 @@ const renderObject = {
 };
 
 const script = (req: Express.Request, res: Express.Response) => {
-	return res.render("example/home", renderObject);
+	return res.render("home", renderObject);
 };
 
 export default class Home extends Route {
