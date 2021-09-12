@@ -1,16 +1,15 @@
-import Route from "../../core/route";
+import Route from "../core/route";
 import Express from "express";
 
 const renderObject = {
-	title: "Home",
-	message: "All the examples included in this Repo",
+	title: "About us.",
 };
 
 const script = (req: Express.Request, res: Express.Response) => {
-	return res.render("example/home", renderObject);
+	return res.render("about", renderObject);
 };
 
-export default class Home extends Route {
+export default class AboutUs extends Route {
 	/**
 	 * super()
 	 * parameter 1: the URL path (/api/employees)
@@ -18,6 +17,6 @@ export default class Home extends Route {
 	 * parameter 3: the Express middleware/handler function (script)
 	 **/
 	constructor() {
-		super("/", "get", script);
+		super("/about", "get", script);
 	}
 }

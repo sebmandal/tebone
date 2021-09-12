@@ -1,4 +1,4 @@
-import Route from "../../core/route";
+import Route from "../core/route";
 import Express from "express";
 
 /**
@@ -36,7 +36,9 @@ const script = (req: Express.Request, res: Express.Response) => {
 	};
 
 	res.header("Content-Type", "application/json");
-	return res.send(JSON.stringify(queryExists ? employee : employees, null, 2));
+	return res.send(
+		JSON.stringify(queryExists ? employee : employees, null, 2),
+	);
 };
 
 export default class API extends Route {
