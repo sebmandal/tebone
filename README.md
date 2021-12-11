@@ -1,4 +1,10 @@
-# TypeScript Express Backend 1 (TEB1)
+<div align="center">
+  <a href="https://github.com/sebmandal/tebone" target="_blank">
+    <img height="180" alt="tebone" src="https://cdn.discordapp.com/attachments/869843923428847666/872057443566383144/tebone.svg">
+  </a>
+</div>
+
+### Table of contents
 
 -   [Introduction](#introduction)
 -   [Features](#features)
