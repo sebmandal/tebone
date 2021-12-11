@@ -1,9 +1,9 @@
-import Route from "../core/route";
+import Route from "../../core/route";
 import Express from "express";
 
 /**
- * sample database
- **/
+ * example database
+ */
 const employeeDatabase = {
 	employees: [
 		{
@@ -43,11 +43,11 @@ const script = (req: Express.Request, res: Express.Response) => {
 
 export default class API extends Route {
 	/**
-	 * Configuring the necessary properties for the class to be executable
+	 * @name GetApiEmployees
 	 *
-	 * @param path - The routing path
-	 * @param method - The routing method
-	 * @param script - The route handler script
+	 * @param {string} path
+	 * @param {string} method
+	 * @param {function} middleware
 	 */
 	constructor() {
 		super("/api/employees", "get", script);

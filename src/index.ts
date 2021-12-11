@@ -14,7 +14,7 @@ app.use(express.static("./public"));
 
 // Automatically configure Express routes
 import routes from "./core/all_routes";
-Object.entries(routes).forEach(([_, Route]) => {
+Object.entries(routes).forEach(([_, Route]: any) => {
 	new Route().run(app);
 });
 
